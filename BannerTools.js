@@ -61,7 +61,13 @@ function BannerTools (){
         return false;
     }; 
 
-    this.testua = function(regex){
-      return regex.test(navigator.userAgent)
-    } 
+  this.testua = function(regex){
+    return regex.test(navigator.userAgent)
+  }
+
+  this.blockvisible = function(el, bool){
+    (bool)? 
+      el.style['display']='block' : 
+      el.style['display']='none';
+  }      
 }
